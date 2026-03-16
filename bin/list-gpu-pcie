@@ -1,0 +1,5 @@
+#!/bin/bash
+# 
+# 
+
+lspci | grep NVIDIA | cut -c1-2 | xargs -I {} echo {} | uniq
